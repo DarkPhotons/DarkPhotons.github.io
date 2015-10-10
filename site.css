@@ -1,13 +1,21 @@
 body {
 	font-family: "Roboto", sans-serif;
-    background-color: #000000;
-	background-image: url("/img/bk1.png");
-	background-repeat: no-repeat;
-	background-position-x: center;
+    background: rgb(0,0,0); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgb(0,0,0) 0%, rgb(28,28,28) 14%, rgb(0,0,0) 48%, rgb(0,0,0) 52%, rgb(22,22,22) 86%, rgb(0,0,0) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgb(0,0,0)), color-stop(14%,rgb(28,28,28)), color-stop(48%,rgb(0,0,0)), color-stop(52%,rgb(0,0,0)), color-stop(86%,rgb(22,22,22)), color-stop(99%,rgb(0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgb(0,0,0) 0%,rgb(28,28,28) 14%,rgb(0,0,0) 48%,rgb(0,0,0) 52%,rgb(22,22,22) 86%,rgb(0,0,0) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgb(0,0,0) 0%,rgb(28,28,28) 14%,rgb(0,0,0) 48%,rgb(0,0,0) 52%,rgb(22,22,22) 86%,rgb(0,0,0) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgb(0,0,0) 0%,rgb(28,28,28) 14%,rgb(0,0,0) 48%,rgb(0,0,0) 52%,rgb(22,22,22) 86%,rgb(0,0,0) 99%); /* IE10+ */
+	background: linear-gradient(135deg, rgb(0,0,0) 0%,rgb(28,28,28) 14%,rgb(0,0,0) 48%,rgb(0,0,0) 52%,rgb(22,22,22) 86%,rgb(0,0,0) 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	text-align: center;
 	color: #FFFFFF;
 	font-weight: 100;
 	margin: 0;
+	height: 100vh;
+	background-image: url("/img/bk1.png");
+	background-repeat: no-repeat;
+	background-position-x: center;
 }
 
 #welcometext {
@@ -48,6 +56,7 @@ body {
 	font-family:Calibri;
 	font-size:18px;
 	text-decoration:none;
+	transition: box-shadow 0.4s;
 }
 
 .dbutton:hover {
